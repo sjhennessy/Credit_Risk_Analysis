@@ -8,6 +8,23 @@ The purpose of this analysis is to use a credit card credit dataset from Lending
 
 (15 pt)
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+### RandomOverSampler
+![RandomOverSampling](https://user-images.githubusercontent.com/69759624/104092929-d2a5b780-524c-11eb-8d80-9d60e8e0707b.PNG)
+
+### SMOTE Oversampling
+
+
+### Cluster Centroids Undersampling
+
+
+### SMOTEENN Over and Undersampling Combo
+
+
+### Balanced Random Forest Classifier (Ensemble)
+
+
+### AdaBoost Classifier (Ensemble)
+
 
 ## Summary:
 
