@@ -33,13 +33,17 @@ The balanced accuracy score, precision, and recall scores of all six machine lea
 ### Balanced Random Forest Classifier (Ensemble)
 ![RandomForestClassifierEnsemble](https://user-images.githubusercontent.com/69759624/104092943-dcc7b600-524c-11eb-8fbf-ae4dfec2743a.PNG)
 
-* The RandomForestClassifier technique has improved accuracy, precision, and sensitivity results compared to the over and undersampling techniques. The accuracy is 0.79, but the precision for the high-risk group is only slightly higher at 0.03 because of the large number of false positives (n=2153).
-
+* The RandomForestClassifier technique has improved accuracy, precision, and sensitivity results compared to the over and undersampling techniques. The accuracy is 0.79, but the precision for the high-risk group is only slightly higher at 0.03 because of the large number of false positives (n=2153). The average recall is high at 0.87. The ensemble technique produced the best results, due to a random forest consisting of a group or ensemble of individual decision trees. A large group of uncorrelated decision trees produced more accurate and stable results than individual decision trees. However, the number of false positives is concerning.
 
 ### AdaBoost Classifier (Ensemble)
 ![AdaBoostClassifierEnsemble](https://user-images.githubusercontent.com/69759624/104092944-dfc2a680-524c-11eb-94dc-dec324a2ce62.PNG)
 
+* AdaBoost is an iterative ensemble method. The AdaBoost classifier builds a strong classifier by combining multiple poorly performing classifiers in order to get a high accuracy classifier. This technique resulted in the best accuracy, precision, and recall numbers compared to the other machine learning techniques. The accuracy was the highest at 0.93. The average precision was 0.99 and the average recall was 0.92. 
+
+* The results look strong, but there is a low number of true positives (n=93) in the dataset compared to the false positives (n=983) resulting in a precision score of 0.09 for the high risk set. 
+
 ## Summary:
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. (2 pt)
-or there is no recommendation with a justification (3 pt)
+* The RandomOverSampler and SMOTE oversampling models did not produce reliable results for predicting credit risk. The ClusterCentroids undersampling and the combination sampling technique (SMOTEENN) techniques also did not result in models that could be recommended for future work with credit risk. 
+
+* The two ensemble machine learning models resulted in the best accuracy, precision, and recall scores with the AdaBoost iterative model showing slightly better precision scores than the BalancedRandomForestClassifier. My recommendation is to use the AdaBoost technique but increase the dataset to obtain a higher number of high risk data points. The current data set is too imbalanced with a relatively small number of high risk data points. There are too many false positives compared to true positives for the high risk group resulting in a low precision score for the high risk group.
