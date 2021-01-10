@@ -2,7 +2,7 @@
 
 ## Overview of the loan prediction risk analysis:
 
-The purpose of this analysis is to use a credit card credit dataset from LendingClub, a lending services company, to oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. A combination approach was also utilized to over- and undersample using the SMOTEENN algorithm. Lastly, two machine learning models were used that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Six different machine learning models were imported to evaluate the the credit card dataset for credit risk, and determine the best machine learning model to predict credit risk.
+The purpose of this analysis was to use a credit card credit dataset from LendingClub, a lending services company, to oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. A combination approach was also utilized to over- and undersample using the SMOTEENN algorithm. Lastly, two machine learning models, BalancedRandomForestClassifier and EasyEnsembleClassifier, were used to predict credit risk. In totlal, six different machine learning models were imported to evaluate the credit card dataset and determine the best machine learning model to predict credit risk.
 
 ## Results:
 The balanced accuracy score, precision, and recall scores of all six machine learning models are listed along with a screenshot of the jupyter notebook.
@@ -44,6 +44,6 @@ The balanced accuracy score, precision, and recall scores of all six machine lea
 
 ## Summary:
 
-* The RandomOverSampler and SMOTE oversampling models did not produce reliable results for predicting credit risk. The ClusterCentroids undersampling and the combination sampling technique (SMOTEENN) techniques also did not result in models that could be recommended for future work with credit risk. 
+* The RandomOverSampler and SMOTE oversampling models did not produce reliable results for predicting credit risk. The ClusterCentroids undersampling and the combination sampling (SMOTEENN) techniques also did not result in models that could be recommended for future work with credit risk. 
 
-* The two ensemble machine learning models resulted in the best accuracy, precision, and recall scores with the AdaBoost iterative model showing slightly better precision scores than the BalancedRandomForestClassifier. My recommendation is to use the AdaBoost technique but increase the dataset to obtain a higher number of high risk data points. The current data set is too imbalanced with a relatively small number of high risk data points. There are too many false positives compared to true positives for the high risk group resulting in a low precision score for the high risk group.
+* The two ensemble machine learning models resulted in the best accuracy, precision, and recall scores with the AdaBoost iterative model showing slightly better precision scores than the BalancedRandomForestClassifier. My recommendation is to use the AdaBoost technique but increase the dataset to obtain a higher number of high risk data points. The current data set is imbalanced with a relatively small number of high risk data points. There are too many false positives compared to true positives resulting in a low precision score for the high risk group.
