@@ -23,7 +23,7 @@ The balanced accuracy score, precision, and recall scores of all six machine lea
 ![ClusterCentroidsUndersampling](https://user-images.githubusercontent.com/69759624/104092937-d89b9880-524c-11eb-83a6-d1de897634e3.PNG)
 
 ####
-* When the data is undersampled, the accuracy is low at 0.55 which is the total correct divided by the total number of data points. The precision is low (0.01) resulting from a large number of false positives for the high-risk group. The average recall is very low with an average of 0.41. The undersampling technique is less reliable than the oversampling techniques (RandomOverSampler and SMOTE) for predicting credit risk. 
+* When the data is undersampled, the accuracy is low at 0.55 which is the total correct divided by the total number of data points. The precision is low (0.01) resulting from a large number of false positives for the high-risk group. The average recall is very low with an average of 0.41. The ClusterCentroids undersampling technique is less reliable than the oversampling techniques (RandomOverSampler and SMOTE) for predicting credit risk. 
 
 ### SMOTEENN Over and Undersampling Combo
 ![SMOTEENNcombo](https://user-images.githubusercontent.com/69759624/104092939-dafdf280-524c-11eb-8eaf-bb9f81e7fc47.PNG)
@@ -32,6 +32,9 @@ The balanced accuracy score, precision, and recall scores of all six machine lea
 
 ### Balanced Random Forest Classifier (Ensemble)
 ![RandomForestClassifierEnsemble](https://user-images.githubusercontent.com/69759624/104092943-dcc7b600-524c-11eb-8fbf-ae4dfec2743a.PNG)
+
+* The RandomForestClassifier technique has improved accuracy, precision, and sensitivity results compared to the over and undersampling techniques. The accuracy is 0.79, but the precision for the high-risk group is only slightly higher at 0.03 because of the large number of false positives (n=2153).
+
 
 ### AdaBoost Classifier (Ensemble)
 ![AdaBoostClassifierEnsemble](https://user-images.githubusercontent.com/69759624/104092944-dfc2a680-524c-11eb-94dc-dec324a2ce62.PNG)
