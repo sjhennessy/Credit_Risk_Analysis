@@ -2,7 +2,7 @@
 
 ## Overview of the loan prediction risk analysis:
 
-The purpose of this analysis was to use a credit card credit dataset from LendingClub, a lending services company, to oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. A combination approach was also utilized to over- and undersample using the SMOTEENN algorithm. Lastly, two machine learning models, BalancedRandomForestClassifier and EasyEnsembleClassifier, were used to predict credit risk. In totlal, six different machine learning models were imported to evaluate the credit card dataset and determine the best machine learning model to predict credit risk.
+The purpose of this analysis was to use a credit card credit dataset from LendingClub, a lending services company, to oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. A combination approach was also utilized to over- and undersample using the SMOTEENN algorithm. Lastly, two machine learning models, BalancedRandomForestClassifier and EasyEnsembleClassifier, were used to predict credit risk. In total, six different machine learning models were imported to evaluate the credit card dataset and determine the best machine learning model to predict credit risk.
 
 ## Results:
 The balanced accuracy score, precision, and recall scores of all six machine learning models are listed along with a screenshot of the jupyter notebook.
